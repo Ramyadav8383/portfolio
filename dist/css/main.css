@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Dosis", sans-serif;
+  color: #333; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.btn {
+  background: #f4f4f4;
+  display: inline-block;
+  color: #333;
+  border: none;
+  padding: 0.75rem 2rem;
+  margin-top: 1rem; }
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem 0;
+  text-align: center; }
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #navbar img {
+    width: 80px; }
+  #navbar ul {
+    display: flex; }
+  #navbar li {
+    padding: 1.5rem;
+    font-size: 1.2rem; }
+  #navbar a {
+    color: #fff; }
+    #navbar a:hover {
+      border-bottom: 2px solid #ffbc00; }
+
+.hero {
+  background: url(../img/showcase.jpg) no-repeat center center/cover; }
+
+.showcase-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden; }
+  .showcase-content h1 {
+    font-size: 4rem; }
+  .showcase-content p {
+    font-size: 1.25rem; }
+
+#specialization .header {
+  text-align: center; }
+  #specialization .header h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 2rem 0; }
+  #specialization .header p {
+    font-size: 1.25rem; }
+
+#specialization .card i {
+  color: #ffbc00;
+  font-size: 2rem;
+  padding: 1rem 0; }
+
+#specialization .card h3 {
+  padding-bottom: 1rem; }
+
+#specialization .card .card-1,
+#specialization .card .card-2,
+#specialization .card .card-3,
+#specialization .card .card-4 {
+  padding: 2rem; }
+
+#achievments .card i {
+  font-size: 3rem; }
+
+#achievments .card p {
+  font-size: 1.7rem; }
+
+#achievments .card .achieve-card-1 {
+  background: #f4f4f4;
+  padding: 4rem 6rem; }
+
+#achievments .card .achieve-card-2 {
+  background: #ccc;
+  padding: 4rem 6rem; }
+
+#achievments .card .achieve-card-3 {
+  background: #f4f4f4;
+  padding: 4rem 6rem; }
+
+#achievments .card .achieve-card-4 {
+  background-color: #ccc;
+  padding: 4rem 6rem; }
+
+#process .header {
+  text-align: center; }
+  #process .header h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 2rem 0; }
+  #process .header p {
+    font-size: 1.25rem; }
+
+#process .card i {
+  color: #fff;
+  background-color: #333;
+  font-size: 4rem;
+  padding: 2rem;
+  border-radius: 50%; }
+  #process .card i:hover {
+    background: #ffbc00; }
+
+#process .card h3 {
+  padding: 1rem 0; }
+
+#process .card .card-1,
+#process .card .card-2,
+#process .card .card-3,
+#process .card .card-4 {
+  padding: 2rem; }
+
+#main-footer {
+  background-color: #333;
+  color: #fff; }
+  #main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center; }
+  #main-footer .icons i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    background-color: #333;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 0.5rem; }
+    #main-footer .icons i:hover {
+      background: #ffbc00; }
+
+.hero-about {
+  background: url(../img/showcase.jpg) no-repeat center cover; }
+
+#about .header {
+  text-align: center;
+  padding: 1.5rem; }
+  #about .header h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 2rem; }
+  #about .header p {
+    font-size: 1.3rem; }
+
+#about .about-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem; }
+  #about .about-info .info-image img {
+    width: 400px; }
+  #about .about-info .info-content {
+    background: #f4f4f4;
+    padding: 1rem;
+    text-align: center; }
+    #about .about-info .info-content h3 {
+      padding: 0.5rem 0; }
+
+#about .about-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem 0; }
+  #about .about-card i {
+    font-size: 3rem;
+    color: #ffbc00;
+    margin-bottom: 1rem; }
+  #about .about-card h3 {
+    padding: 1rem 0; }
+
+#about-skills {
+  background: #333;
+  color: #fff;
+  padding: 3rem; }
+  #about-skills .container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 200; }
+  #about-skills .container h3 {
+    padding: 0.5rem 0;
+    border-bottom: 20px solid #ffbc00; }
+
+#about-logos {
+  background: #f4f4f4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4rem 0;
+  text-align: center; }
+
+#testimonials {
+  padding: 2rem 0; }
+  #testimonials .header {
+    text-align: center; }
+    #testimonials .header h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      padding: 1.5rem; }
+    #testimonials .header p {
+      font-size: 1.3rem; }
+  #testimonials .card {
+    gap: 0.5rem;
+    text-align: left;
+    line-height: 1.7rem; }
+    #testimonials .card .card-1,
+    #testimonials .card .card-2,
+    #testimonials .card .card-3,
+    #testimonials .card .card-4 {
+      border: 1px solid #ccc;
+      padding: 1rem; }
+
+#work {
+  padding: 3rem; }
+  #work .header {
+    text-align: center; }
+    #work .header h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      padding-bottom: 1rem; }
+    #work .header p {
+      font-size: 1.3rem;
+      padding: 1rem; }
+  #work .work-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #work .work-items img {
+      width: 100%; }
+
+#contact {
+  padding: 2rem 0; }
+  #contact .container .header {
+    text-align: center;
+    padding: 1rem; }
+    #contact .container .header h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      padding: 1rem 0; }
+    #contact .container .header p {
+      padding: 0.5rem 0;
+      font-size: 1.3rem; }
+  #contact .container .contact-form .form-group {
+    margin: 0.75rem; }
+    #contact .container .contact-form .form-group input {
+      display: inline-block;
+      width: 49%;
+      padding: 0.5rem 0;
+      margin-right: 0.5rem; }
+    #contact .container .contact-form .form-group textarea {
+      width: 99%;
+      padding: 1rem; }
+  #contact .container .btn {
+    background: #333;
+    color: #fff;
+    width: 60%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-bottom: 1.5rem; }
+
+#contact-info {
+  background: #333;
+  color: #fff; }
+  #contact-info .contact-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 0; }
+    #contact-info .contact-card i {
+      font-size: 3rem;
+      margin-bottom: 1rem; }
+    #contact-info .contact-card h3 {
+      padding: 1rem 0; }
+  #contact-info .finish {
+    background: #ffbc00;
+    text-align: center;
+    padding: 5rem; }
+    #contact-info .finish h1 {
+      font-size: 3.5rem; }

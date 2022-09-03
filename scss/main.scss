@@ -1,0 +1,426 @@
+@import "variables";
+// general style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Dosis", sans-serif;
+  color: $dark-color;
+}
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+ul {
+  list-style: none;
+}
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+// img {
+//   width: 100%;
+// }
+.container {
+  max-width: $website-width;
+  margin: 0 auto;
+}
+.btn {
+  background: $light-color;
+  display: inline-block;
+  color: $dark-color;
+  border: none;
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+}
+// cards
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem 0;
+  // gap: 1rem;
+  text-align: center;
+}
+// navbar
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 80px;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+  a {
+    color: #fff;
+
+    &:hover {
+      border-bottom: 2px solid $main-color;
+    }
+  }
+}
+// showcase
+.hero {
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
+}
+.showcase-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden;
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
+// section speacilization
+#specialization {
+  .header {
+    text-align: center;
+    // padding: 2rem 0;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      padding: 2rem 0;
+      // border-bottom: 2px solid $main-color;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+  .card {
+    i {
+      color: $main-color;
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
+    h3 {
+      padding-bottom: 1rem;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+      padding: 2rem;
+    }
+  }
+}
+// achievements
+#achievments {
+  .card {
+    // background: $light-color;
+
+    i {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.7rem;
+    }
+
+    .achieve-card-1 {
+      background: $light-color;
+      padding: 4rem 6rem;
+    }
+    .achieve-card-2 {
+      background: $medium-color;
+      padding: 4rem 6rem;
+    }
+    .achieve-card-3 {
+      background: $light-color;
+      padding: 4rem 6rem;
+    }
+    .achieve-card-4 {
+      background-color: $medium-color;
+      padding: 4rem 6rem;
+    }
+  }
+}
+// process
+#process {
+  .header {
+    text-align: center;
+    // padding: 2rem 0;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      padding: 2rem 0;
+      // border-bottom: 2px solid $main-color;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+  .card {
+    i {
+      color: #fff;
+      background-color: $dark-color;
+      font-size: 4rem;
+      padding: 2rem;
+      border-radius: 50%;
+      &:hover {
+        background: $main-color;
+      }
+    }
+    h3 {
+      padding: 1rem 0;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+      padding: 2rem;
+    }
+  }
+}
+// footer
+#main-footer {
+  background-color: $dark-color;
+  color: #fff;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+  }
+  .icons {
+    i {
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      background-color: $dark-color;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      padding: 0.5rem;
+
+      &:hover {
+        background: $main-color;
+      }
+    }
+  }
+}
+
+// about -page
+.hero-about {
+  background: url(../img/showcase.jpg) no-repeat center cover;
+}
+#about {
+  .header {
+    text-align: center;
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      padding: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .about-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    .info-image img {
+      width: 400px;
+    }
+
+    .info-content {
+      background: $light-color;
+      padding: 1rem;
+      text-align: center;
+      h3 {
+        padding: 0.5rem 0;
+      }
+    }
+  }
+  .about-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 0;
+
+    i {
+      font-size: 3rem;
+      color: $main-color;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      padding: 1rem 0;
+    }
+  }
+}
+
+// about skills section
+#about-skills {
+  background: $dark-color;
+  color: #fff;
+  padding: 3rem;
+
+  .container {
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 200;
+    }
+    h3 {
+      padding: 0.5rem 0;
+      border-bottom: 20px solid $main-color;
+    }
+  }
+}
+// about logos
+#about-logos {
+  background: $light-color;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+// testimonials
+#testimonials {
+  padding: 2rem 0;
+  .header {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      padding: 1.5rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .card {
+    gap: 0.5rem;
+    text-align: left;
+    line-height: 1.7rem;
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+  }
+}
+
+// work page
+#work {
+  padding: 3rem;
+
+  .header {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      padding-bottom: 1rem;
+    }
+    p {
+      font-size: 1.3rem;
+      padding: 1rem;
+    }
+  }
+  .work-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// contact page
+#contact {
+  padding: 2rem 0;
+  .container {
+    .header {
+      text-align: center;
+      padding: 1rem;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 200;
+        padding: 1rem 0;
+      }
+      p {
+        padding: 0.5rem 0;
+        font-size: 1.3rem;
+      }
+    }
+    .contact-form {
+      .form-group {
+        margin: 0.75rem;
+
+        input {
+          display: inline-block;
+          width: 49%;
+          padding: 0.5rem 0;
+          margin-right: 0.5rem;
+        }
+        textarea {
+          width: 99%;
+          padding: 1rem;
+        }
+      }
+    }
+    .btn {
+      background: $dark-color;
+      color: #fff;
+      width: 60%;
+      text-align: center;
+      margin-top: 3rem;
+      margin-left: 15rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// contact cards
+#contact-info {
+  background: $dark-color;
+  color: #fff;
+
+  .contact-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 0;
+
+    i {
+      font-size: 3rem;
+      // color: $main-color;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      padding: 1rem 0;
+    }
+  }
+  .finish {
+    background: $main-color;
+    text-align: center;
+    padding: 5rem;
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}

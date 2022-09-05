@@ -443,13 +443,3 @@ img {
       padding-bottom: 0; }
   #home-b .stats div {
     padding: 2rem 0 1rem 0; } }
-
-#about-c {
-  display: none; }
-
-#main-footer {
-  height: 7rem; }
-  #main-footer .footer-content {
-    flex-direction: column;
-    padding: 1rem;
-    height: 5rem; }
